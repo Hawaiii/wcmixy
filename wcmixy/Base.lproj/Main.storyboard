@@ -137,6 +137,9 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="cameraView" destination="GfD-Uq-qoa" id="RL2-Wb-0hS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
