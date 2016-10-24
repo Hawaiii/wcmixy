@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,29 +15,24 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GfD-Uq-qoa" userLabel="cameraView">
-                                <rect key="frame" x="0.0" y="20" width="450" height="580"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9RD-lz-Dd0" userLabel="cameraView">
+                                <frame key="frameInset" width="1024" height="768"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cuu-l3-DMi" userLabel="palleteView">
-                                <rect key="frame" x="450" y="20" width="150" height="580"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TBh-Pu-Bqf" userLabel="valueView">
-                                        <rect key="frame" x="0.0" y="0.0" width="150" height="193"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AOJ-Lg-Ry7" userLabel="value0">
-                                                <rect key="frame" x="0.0" y="10" width="75" height="183"/>
-                                                <color key="backgroundColor" red="1" green="0.87354565120000005" blue="0.42144987299999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="1" green="0.87354565120000005" blue="0.42144987299999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Inn-Cs-uHC" userLabel="value1">
-                                                <rect key="frame" x="76" y="10" width="74" height="183"/>
-                                                <color key="backgroundColor" red="1" green="0.79517850690000003" blue="0.51143916079999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="1" green="0.79517850690000003" blue="0.51143916079999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="AOJ-Lg-Ry7" firstAttribute="trailing" secondItem="Inn-Cs-uHC" secondAttribute="leading" constant="-1" id="QAG-wX-6ba"/>
                                             <constraint firstItem="AOJ-Lg-Ry7" firstAttribute="top" secondItem="TBh-Pu-Bqf" secondAttribute="top" constant="10" id="RBI-It-BhG"/>
@@ -50,18 +45,15 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HPz-Tf-W1V" userLabel="hueView">
-                                        <rect key="frame" x="0.0" y="193" width="150" height="194"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lpb-nr-52o" userLabel="value0">
-                                                <rect key="frame" x="0.0" y="10" width="75" height="184"/>
-                                                <color key="backgroundColor" red="1" green="0.79517850690000003" blue="0.51143916079999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="1" green="0.79517850690000003" blue="0.51143916079999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8fH-hs-IF1" userLabel="value1">
-                                                <rect key="frame" x="76" y="10" width="74" height="184"/>
-                                                <color key="backgroundColor" red="1" green="0.54485796409999998" blue="0.43279614059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="1" green="0.54485796409999998" blue="0.43279614059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="lpb-nr-52o" firstAttribute="leading" secondItem="HPz-Tf-W1V" secondAttribute="leading" id="FvG-IU-8eK"/>
                                             <constraint firstAttribute="trailing" secondItem="8fH-hs-IF1" secondAttribute="trailing" id="GZQ-O3-17J"/>
@@ -74,18 +66,15 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VPR-ai-fqh" userLabel="saturationView">
-                                        <rect key="frame" x="0.0" y="387" width="150" height="193"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b1d-QY-6cN" userLabel="value0">
-                                                <rect key="frame" x="0.0" y="10" width="75" height="183"/>
-                                                <color key="backgroundColor" red="1" green="0.54485796409999998" blue="0.43279614059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="1" green="0.54485796409999998" blue="0.43279614059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0ke-nG-8OV" userLabel="value1">
-                                                <rect key="frame" x="76" y="10" width="74" height="183"/>
-                                                <color key="backgroundColor" red="1" green="0.87354565120000005" blue="0.42144987299999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="1" green="0.87354565120000005" blue="0.42144987299999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="0ke-nG-8OV" secondAttribute="bottom" id="DPY-PO-clh"/>
                                             <constraint firstItem="b1d-QY-6cN" firstAttribute="top" secondItem="VPR-ai-fqh" secondAttribute="top" constant="10" id="SY8-YU-Q1U"/>
@@ -98,7 +87,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="0.87354565119978833" blue="0.42144987298859105" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.87354565119978833" blue="0.42144987298859105" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="HPz-Tf-W1V" firstAttribute="leading" secondItem="cuu-l3-DMi" secondAttribute="leading" id="6rF-in-XZb"/>
                                     <constraint firstItem="TBh-Pu-Bqf" firstAttribute="top" secondItem="cuu-l3-DMi" secondAttribute="top" id="Hfk-Fi-lVG"/>
@@ -116,34 +105,23 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="GfD-Uq-qoa" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Lgo-aX-GQA"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cuu-l3-DMi" secondAttribute="bottom" id="OEt-wx-Cjs"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cuu-l3-DMi" secondAttribute="bottom" id="Roo-LP-LIb"/>
                             <constraint firstItem="cuu-l3-DMi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="SO4-qw-GAt"/>
-                            <constraint firstItem="cuu-l3-DMi" firstAttribute="leading" secondItem="GfD-Uq-qoa" secondAttribute="trailing" id="Wgp-9M-D9M"/>
+                            <constraint firstItem="9RD-lz-Dd0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="XMR-u0-rsT"/>
                             <constraint firstAttribute="trailing" secondItem="cuu-l3-DMi" secondAttribute="trailing" id="Xm4-OK-i1W"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="cuu-l3-DMi" secondAttribute="trailing" id="kww-2F-H4v"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="GfD-Uq-qoa" secondAttribute="bottom" id="p19-R3-95r"/>
-                            <constraint firstItem="cuu-l3-DMi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="uG9-Cq-u8d"/>
-                            <constraint firstItem="GfD-Uq-qoa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="v9m-E8-GbZ"/>
+                            <constraint firstItem="9RD-lz-Dd0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="qUo-RX-fuk"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9RD-lz-Dd0" secondAttribute="bottom" id="rMW-jH-hmG"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="kww-2F-H4v"/>
-                                <exclude reference="uG9-Cq-u8d"/>
-                                <exclude reference="Roo-LP-LIb"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
-                        <outlet property="cameraView" destination="GfD-Uq-qoa" id="RL2-Wb-0hS"/>
+                        <outlet property="cameraView" destination="9RD-lz-Dd0" id="vrn-l0-0Py"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="286" y="323"/>
+            <point key="canvasLocation" x="285.9375" y="322.65625"/>
         </scene>
     </scenes>
 </document>

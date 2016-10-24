@@ -26,12 +26,13 @@ using namespace cv;
     
     videoCamera = [[CvVideoCamera alloc] initWithParentView:cameraView];
     videoCamera.delegate = self;
-    
-    videoCamera.defaultAVCaptureDevicePosition = AVCaptureDevicePositionFront;
-    videoCamera.defaultAVCaptureSessionPreset = AVCaptureSessionPreset1280x720;
-    videoCamera.defaultAVCaptureVideoOrientation = AVCaptureVideoOrientationLandscapeRight;
+    videoCamera.defaultAVCaptureDevicePosition = AVCaptureDevicePositionBack;
+    videoCamera.defaultAVCaptureVideoOrientation = AVCaptureVideoOrientationLandscapeLeft;
     videoCamera.defaultFPS = 30;
-//    videoCamera.grayscale = NO;
+    videoCamera.rotateVideo = YES; // Rotate video so everything looks correct
+    
+    // TODO: test video orientatio setup
+    videoCamera.defaultAVCaptureSessionPreset = AVCaptureSessionPreset640x480;
     
     [videoCamera start];
 
@@ -45,7 +46,6 @@ using namespace cv;
 #ifdef __cplusplus
 - (void)processImage:(Mat&)image;
 {
-    
 //    UIImage *imshow = MatToUIImage(image);
 //    Mat image_copy;
 //    cvtColor(image, image_copy, CV_BGRA2BGR);
