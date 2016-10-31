@@ -15,7 +15,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9RD-lz-Dd0" userLabel="cameraView">
@@ -117,6 +117,9 @@
                     </view>
                     <connections>
                         <outlet property="cameraView" destination="9RD-lz-Dd0" id="vrn-l0-0Py"/>
+                        <outlet property="hue0View" destination="lpb-nr-52o" id="1Sd-Eb-aYe"/>
+                        <outlet property="saturation0View" destination="b1d-QY-6cN" id="gwf-Y1-PrU"/>
+                        <outlet property="value0View" destination="AOJ-Lg-Ry7" id="Zwl-1M-aQK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
